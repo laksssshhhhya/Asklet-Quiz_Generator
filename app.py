@@ -57,11 +57,20 @@ class QuizManager:
 
             # radio button handling for mcq
             if q['type'] == 'MCQ':
-                st.radio(
+                options = ["Select an option"] + q['options']
+                selected = st.radio(
                     label=f"Select an answer for Question {i+1}",
-                    options=q['options'],
+                    options=options,
+                    index=0,
                     key = f"mcq_{i}"
                 )
+                if selected == "Select an option":
+                    # Treat as no option selected
+                    st.write("Please select an answer")
+
+                else:
+                    # Normal flow with selected option
+                    st.write(f"You selected: {selected}")
                 # self.user_answers.append(user_ans)
 
             #handle fill ups
