@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment files
+.env
+.env.*
+
+# Virtual environment directories
+venv/
+env/
+.venv/
+.env/
+
+# Python egg and distribution files
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# PyCharm settings
+.idea/
+
+# Logs and databases
+*.log
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/
+
+# ReportLab cache (if any)
+.reportlab_cache/
+
+# Result files folder
+results/
+
+# Python test cache
+.pytest_cache/
+
+# Ignore .pyc files
+*.pyc
